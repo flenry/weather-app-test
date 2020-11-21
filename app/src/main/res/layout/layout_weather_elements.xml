@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="20dp"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="175dp" />
+
+    <TextView
+        android:id="@+id/tv_temperature_label"
+        android:text="Temperature"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/Element_Style" />
+
+    <TextView
+        android:id="@+id/tv_temperature_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Element_Style"
+        android:text="50 degrees celcius"
+        app:layout_constraintStart_toStartOf="@id/guideline_start"
+        app:layout_constraintTop_toTopOf="@id/tv_temperature_label"
+        />
+
+    <TextView
+        android:id="@+id/tv_pressure_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pressure"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_temperature_label"
+        style="@style/Element_Style"
+        />
+
+    <TextView
+        android:id="@+id/tv_pressure_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Element_Style"
+        android:text="1001 mBar"
+        app:layout_constraintStart_toStartOf="@id/guideline_start"
+        app:layout_constraintTop_toTopOf="@+id/tv_pressure_label"
+        />
+
+    <TextView
+        android:id="@+id/tv_humidity_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Humidity"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_pressure_label"
+        style="@style/Element_Style"
+        />
+
+    <TextView
+        android:id="@+id/tv_humidity_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Element_Style"
+        android:text="50 %"
+        app:layout_constraintStart_toStartOf="@id/guideline_start"
+        app:layout_constraintTop_toTopOf="@+id/tv_humidity_label"
+        />
+
+    <TextView
+        android:id="@+id/tv_visibility_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Visibility"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_humidity_label"
+        style="@style/Element_Style"
+        />
+
+    <TextView
+        android:id="@+id/tv_visibility_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Element_Style"
+        android:text="10 KM"
+        app:layout_constraintStart_toStartOf="@id/guideline_start"
+        app:layout_constraintTop_toTopOf="@+id/tv_visibility_label"
+        />
+
+    <TextView
+        android:id="@+id/tv_sunrise_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sunrise"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_visibility_label"
+        style="@style/Element_Style"
+        />
+
+    <TextView
+        android:id="@+id/tv_sunrise_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Element_Style"
+        android:text="5am"
+        app:layout_constraintStart_toStartOf="@id/guideline_start"
+        app:layout_constraintTop_toTopOf="@+id/tv_sunrise_label"
+        />
+
+    <TextView
+        android:id="@+id/tv_sunset_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sunset"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_sunrise_label"
+        style="@style/Element_Style"
+        />
+
+    <TextView
+        android:id="@+id/tv_sunset_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Element_Style"
+        android:text="6pm"
+        app:layout_constraintStart_toStartOf="@id/guideline_start"
+        app:layout_constraintTop_toTopOf="@+id/tv_sunset_label"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
